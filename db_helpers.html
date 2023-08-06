@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>HtmlBuilder Developer Docs: db_helpers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Модули</a></li><li><a href="ClassHierarchy.html">Иерархия классов</a></li><li><a href="AllClasses.html">Классы, интерфейсы и объекты</a></li><li><a href="AllTypes.html">Типы</a></li><li><a href="AllVariables.html">Переменные</a></li><li><a href="AllConstants.html">Константы</a></li><li><a href="AllFunctions.html">Процедуры и функции</a></li><li><a href="AllIdentifiers.html">Идентификаторы</a></li><li><a href="GVUses.png">График зависимости модулей</a></li><li><a href="GVClasses.png">График иерархии классов</a></li></ul></div><div class="content">
+<h1 class="unit">Модуль db_helpers</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Описание</a></div><div class="one_section">Используемые модули</div><div class="one_section">Классы, интерфейсы и объекты</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Процедуры и функции</a></div><div class="one_section">Типы</div><div class="one_section">Константы</div><div class="one_section">Переменные</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Описание</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Обзор</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Процедуры и функции</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="db_helpers.html#checkConnect">checkConnect</a></strong>(var konnect : TSQLite3Connection; var tranzact : TSQLTransaction; msg: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="db_helpers.html#sql_execute">sql_execute</a></strong>(request: string; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction; var sQ: TSQLQuery);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="db_helpers.html#sql_execute_direct">sql_execute_direct</a></strong>(request: string; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction );</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="db_helpers.html#prepared_transaction_start">prepared_transaction_start</a></strong>(request : String; var sQ : TSQLQuery; tranzact : TSQLTransaction);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="db_helpers.html#prepared_transaction_end">prepared_transaction_end</a></strong>(var sQ : TSQLQuery; tranzact : TSQLTransaction);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="db_helpers.html#open_sql">open_sql</a></strong>(request : string; var sQ : TSQLQuery);</code></td>
+</tr>
+</table>
+<h2 class="description">Описание</h2>
+<h3 class="detail">Процедуры и функции</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="checkConnect"></span><code>procedure <strong>checkConnect</strong>(var konnect : TSQLite3Connection; var tranzact : TSQLTransaction; msg: String);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="sql_execute"></span><code>procedure <strong>sql_execute</strong>(request: string; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction; var sQ: TSQLQuery);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="sql_execute_direct"></span><code>procedure <strong>sql_execute_direct</strong>(request: string; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction );</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="prepared_transaction_start"></span><code>procedure <strong>prepared_transaction_start</strong>(request : String; var sQ : TSQLQuery; tranzact : TSQLTransaction);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="prepared_transaction_end"></span><code>procedure <strong>prepared_transaction_end</strong>(var sQ : TSQLQuery; tranzact : TSQLTransaction);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="open_sql"></span><code>procedure <strong>open_sql</strong>(request : string; var sQ : TSQLQuery);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+(c) Назаров А.А., Оренбург, 2003<hr><span class="appinfo"><em>Сгенерировал <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

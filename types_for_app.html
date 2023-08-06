@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>HtmlBuilder Developer Docs: types_for_app</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Модули</a></li><li><a href="ClassHierarchy.html">Иерархия классов</a></li><li><a href="AllClasses.html">Классы, интерфейсы и объекты</a></li><li><a href="AllTypes.html">Типы</a></li><li><a href="AllVariables.html">Переменные</a></li><li><a href="AllConstants.html">Константы</a></li><li><a href="AllFunctions.html">Процедуры и функции</a></li><li><a href="AllIdentifiers.html">Идентификаторы</a></li><li><a href="GVUses.png">График зависимости модулей</a></li><li><a href="GVClasses.png">График иерархии классов</a></li></ul></div><div class="content">
+<h1 class="unit">Модуль types_for_app</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Описание</a></div><div class="one_section">Используемые модули</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Классы, интерфейсы и объекты</a></div><div class="one_section">Процедуры и функции</div><div class="one_section"><a class="section" href="#PasDoc-Types">Типы</a></div><div class="one_section">Константы</div><div class="one_section">Переменные</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Описание</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Обзор</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Классы, интерфейсы и объекты</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Имя</th>
+<th class="itemdesc">Описание</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.TSpecial_Settings.html"><code>TSpecial_Settings</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.TSection_Record.html"><code>TSection_Record</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.Menu.html"><code>Menu</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.MenuItem.html"><code>MenuItem</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.PresetRecord.html"><code>PresetRecord</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.Tag.html"><code>Tag</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.Tag_Page_Link.html"><code>Tag_Page_Link</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.rubric_pages.html"><code>rubric_pages</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.page_pairs.html"><code>page_pairs</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.section_params.html"><code>section_params</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.section_list.html"><code>section_list</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.page_params.html"><code>page_params</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Типы</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="types_for_app.html#sdict">sdict</a></strong> = specialize TFPGmap&lt;string, string&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="types_for_app.html#TagsPagesMap">TagsPagesMap</a></strong> = specialize TFPGmap&lt;string, <a href="types_for_app.Tag_Page_Link.html">Tag_Page_Link</a>&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="types_for_app.html#TagsMap">TagsMap</a></strong> = specialize TFPGmap&lt;string, <a href="types_for_app.Tag.html">Tag</a>&gt;;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="types_for_app.html#sqls_list">sqls_list</a></strong> = array[byte] of TSQLquery;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="types_for_app.html#user_records">user_records</a></strong> = array[0..7] of record
+              name : string;
+              value : string;
+            end;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="types_for_app.html#PagesMap">PagesMap</a></strong> = specialize TFPGmap&lt;string, <a href="types_for_app.page_params.html">page_params</a>&gt;;</code></td>
+</tr>
+</table>
+<h2 class="description">Описание</h2>
+<h3 class="detail">Типы</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="sdict"></span><code><strong>sdict</strong> = specialize TFPGmap&lt;string, string&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TagsPagesMap"></span><code><strong>TagsPagesMap</strong> = specialize TFPGmap&lt;string, <a href="types_for_app.Tag_Page_Link.html">Tag_Page_Link</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+define type under type</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TagsMap"></span><code><strong>TagsMap</strong> = specialize TFPGmap&lt;string, <a href="types_for_app.Tag.html">Tag</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="sqls_list"></span><code><strong>sqls_list</strong> = array[byte] of TSQLquery;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="user_records"></span><code><strong>user_records</strong> = array[0..7] of record
+              name : string;
+              value : string;
+            end;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PagesMap"></span><code><strong>PagesMap</strong> = specialize TFPGmap&lt;string, <a href="types_for_app.page_params.html">page_params</a>&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+(c) Назаров А.А., Оренбург, 2003<hr><span class="appinfo"><em>Сгенерировал <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

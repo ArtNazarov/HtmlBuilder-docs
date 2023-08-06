@@ -1,0 +1,10 @@
+DiGraph Classes {
+  "TfrmCssProps" -> "TForm"
+  "TfrmCssProps" [href="css_props_dlg.TfrmCssProps.html"]
+  "TfrmEditor" -> "TForm"
+  "TfrmEditor" [href="editor_in_window.TfrmEditor.html"]
+  "TfrmEditorCss" -> "TForm"
+  "TfrmEditorCss" [href="editor_css.TfrmEditorCss.html"]
+  "Render" -> "TObject"
+  "Render" [href="RenderHtml.Render.html"]
+}
