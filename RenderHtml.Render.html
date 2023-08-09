@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Модули</a></li><li><a href="ClassHierarchy.html">Иерархия классов</a></li><li><a href="AllClasses.html">Классы, интерфейсы и объекты</a></li><li><a href="AllTypes.html">Типы</a></li><li><a href="AllVariables.html">Переменные</a></li><li><a href="AllConstants.html">Константы</a></li><li><a href="AllFunctions.html">Процедуры и функции</a></li><li><a href="AllIdentifiers.html">Идентификаторы</a></li><li><a href="GVUses.png">График зависимости модулей</a></li><li><a href="GVClasses.png">График иерархии классов</a></li></ul></div><div class="content">
+<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Модули</a></li><li><a href="ClassHierarchy.html">Иерархия классов</a></li><li><a href="AllClasses.html">Классы, интерфейсы и объекты</a></li><li><a href="AllTypes.html">Типы</a></li><li><a href="AllVariables.html">Переменные</a></li><li><a href="AllConstants.html">Константы</a></li><li><a href="AllFunctions.html">Процедуры и функции</a></li><li><a href="AllIdentifiers.html">Идентификаторы</a></li></ul></div><div class="content">
 <span id="Render"></span><h1 class="cio">Класс Render</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Описание</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Иерархия</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Поля</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Методы</a></div><div class="one_section">Свойства</div></div>
@@ -75,7 +75,9 @@ Render</p>
 <td class="itemcode"><span id="vars"></span><code><strong>vars</strong>: <a href="types_for_app.html#sdict">sdict</a>;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Hashmap for variables and their values</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -83,7 +85,9 @@ Render</p>
 <td class="itemcode"><span id="template"></span><code><strong>template</strong>: String;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+String contained HTML template</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -91,7 +95,9 @@ Render</p>
 <td class="itemcode"><span id="html"></span><code><strong>html</strong>: String;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Result of building template</p>
+</td></tr>
 </table>
 <h3 class="detail">Методы</h3>
 <table class="detail wide_list">
@@ -100,7 +106,9 @@ Render</p>
 <td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Constructor</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -108,7 +116,9 @@ Render</p>
 <td class="itemcode"><span id="Free"></span><code>destructor <strong>Free</strong>;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Destructor</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -116,7 +126,9 @@ Render</p>
 <td class="itemcode"><span id="setTemplate"></span><code>procedure <strong>setTemplate</strong>(aTemplate : String);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Setter for member template</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -124,7 +136,9 @@ Render</p>
 <td class="itemcode"><span id="setVar"></span><code>procedure <strong>setVar</strong>(varname, varvalue : String);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Setter for member vars</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -132,7 +146,9 @@ Render</p>
 <td class="itemcode"><span id="buildHtml"></span><code>procedure <strong>buildHtml</strong>();</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Builds member html</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -140,8 +156,11 @@ Render</p>
 <td class="itemcode"><span id="getHtml"></span><code>function <strong>getHtml</strong>() : String;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Getter of member html</p>
+</td></tr>
 </table>
-(c) Назаров А.А., Оренбург, 2003<hr><span class="appinfo"><em>Сгенерировал <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+(c) Назаров А.А., Оренбург, 2021-2023 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a>
+<hr><span class="appinfo"><em>Сгенерировал <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
 </span>
 </div></div></body></html>

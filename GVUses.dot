@@ -1,4 +1,10 @@
 DiGraph Uses {
+  "AsyncQueue" -> "Classes"
+  "AsyncQueue" -> "SysUtils"
+  "AsyncQueue" [href="AsyncQueue.html"]
+  "const_for_app" -> "Classes"
+  "const_for_app" -> "SysUtils"
+  "const_for_app" [href="const_for_app.html"]
   "css_props_dlg" -> "Classes"
   "css_props_dlg" -> "SysUtils"
   "css_props_dlg" -> "Forms"
@@ -97,12 +103,29 @@ DiGraph Uses {
   "editor_in_window" -> "Types"
   "editor_in_window" -> "LCLType"
   "editor_in_window" [href="editor_in_window.html"]
+  "editor_js" -> "Classes"
+  "editor_js" -> "SysUtils"
+  "editor_js" -> "Forms"
+  "editor_js" -> "Controls"
+  "editor_js" -> "Graphics"
+  "editor_js" -> "Dialogs"
+  "editor_js" -> "StdCtrls"
+  "editor_js" -> "ExtCtrls"
+  "editor_js" -> "SynEdit"
+  "editor_js" -> "SynHighlighterJScript"
+  "editor_js" -> "SynCompletion"
+  "editor_js" -> "Types"
+  "editor_js" -> "LCLType"
+  "editor_js" [href="editor_js.html"]
   "RenderHtml" -> "Classes"
   "RenderHtml" -> "SysUtils"
   "RenderHtml" -> "replacers"
   "RenderHtml" -> "fgl"
   "RenderHtml" -> "types_for_app"
   "RenderHtml" [href="RenderHtml.html"]
+  "replacers" -> "Classes"
+  "replacers" -> "SysUtils"
+  "replacers" [href="replacers.html"]
   "selectors_for_menu" -> "Classes"
   "selectors_for_menu" -> "SysUtils"
   "selectors_for_menu" -> "DB"

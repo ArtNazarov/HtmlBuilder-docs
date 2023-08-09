@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>HtmlBuilder Developer Docs: types_for_app: Record TSection_Record</title>
+<title>HtmlBuilder Developer Docs: AsyncQueue: Класс TFilesQueue</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="PasDoc 0.16.0">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -10,50 +10,49 @@
 <body>
 <div class="container"><div class="navigation">
 <h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Модули</a></li><li><a href="ClassHierarchy.html">Иерархия классов</a></li><li><a href="AllClasses.html">Классы, интерфейсы и объекты</a></li><li><a href="AllTypes.html">Типы</a></li><li><a href="AllVariables.html">Переменные</a></li><li><a href="AllConstants.html">Константы</a></li><li><a href="AllFunctions.html">Процедуры и функции</a></li><li><a href="AllIdentifiers.html">Идентификаторы</a></li></ul></div><div class="content">
-<span id="TSection_Record"></span><h1 class="cio">Record TSection_Record</h1>
+<span id="TFilesQueue"></span><h1 class="cio">Класс TFilesQueue</h1>
 <div class="sections">
-<div class="one_section"><a class="section" href="#PasDoc-Description">Описание</a></div><div class="one_section">Иерархия</div><div class="one_section"><a class="section" href="#PasDoc-Fields">Поля</a></div><div class="one_section">Методы</div><div class="one_section">Свойства</div></div>
+<div class="one_section"><a class="section" href="#PasDoc-Description">Описание</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Иерархия</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Поля</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Методы</a></div><div class="one_section">Свойства</div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Модуль</h2>
 <p class="unitlink">
-<a href="types_for_app.html">types_for_app</a></p>
+<a href="AsyncQueue.html">AsyncQueue</a></p>
 <h2 class="declaration">Объявления</h2>
 <p class="declaration">
-<code>type TSection_Record = record</code></p>
+<code>type TFilesQueue = class(TObject)</code></p>
 <h2 class="description">Описание</h2>
 <p>
-Properties of section</p>
-<h2 class="overview">Обзор</h2>
+Queue which has a list of filename and data and process each elements using TAsyncWriteExecutor inside processEach</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Иерархия</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TFilesQueue</li></ul><h2 class="overview">Обзор</h2>
 <span id="PasDoc-Fields"></span><h3 class="summary">Поля</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="types_for_app.TSection_Record.html#id">id</a></strong>: String
-  </code></td>
+<td class="itemcode"><code><strong><a href="AsyncQueue.TFilesQueue.html#filenames">filenames</a></strong>: Array of String;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="types_for_app.TSection_Record.html#section">section</a></strong>: String
-  </code></td>
+<td class="itemcode"><code><strong><a href="AsyncQueue.TFilesQueue.html#files">files</a></strong>: Array Of String;</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="types_for_app.TSection_Record.html#preset">preset</a></strong>: String
-  </code></td>
+<td class="itemcode"><code><strong><a href="AsyncQueue.TFilesQueue.html#last">last</a></strong>: integer;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Methods"></span><h3 class="summary">Методы</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <strong><a href="AsyncQueue.TFilesQueue.html#Create">Create</a></strong>();</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="types_for_app.TSection_Record.html#note">note</a></strong>: String
-  </code></td>
+<td class="itemcode"><code>procedure <strong><a href="AsyncQueue.TFilesQueue.html#AddToJob">AddToJob</a></strong>(data : String; filename : String);</code></td>
 </tr>
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="types_for_app.TSection_Record.html#full_text">full_text</a></strong>: String
-  </code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="types_for_app.TSection_Record.html#tree">tree</a></strong>: String
-  </code></td>
+<td class="itemcode"><code>procedure <strong><a href="AsyncQueue.TFilesQueue.html#processEach">processEach</a></strong>();</code></td>
 </tr>
 </table>
 <h2 class="description">Описание</h2>
@@ -61,56 +60,63 @@ Properties of section</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="id"></span><code><strong>id</strong>: String
-  </code></td>
+<td class="itemcode"><span id="filenames"></span><code><strong>filenames</strong>: Array of String;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Dynamic array of file names</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="section"></span><code><strong>section</strong>: String
-  </code></td>
+<td class="itemcode"><span id="files"></span><code><strong>files</strong>: Array Of String;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Dynamic arrays of file data</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="preset"></span><code><strong>preset</strong>: String
-  </code></td>
+<td class="itemcode"><span id="last"></span><code><strong>last</strong>: integer;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Index of last added file</p>
+</td></tr>
+</table>
+<h3 class="detail">Методы</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>();</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Create queue</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="note"></span><code><strong>note</strong>: String
-  </code></td>
+<td class="itemcode"><span id="AddToJob"></span><code>procedure <strong>AddToJob</strong>(data : String; filename : String);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+add file data and file name to queue</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="full_text"></span><code><strong>full_text</strong>: String
-  </code></td>
+<td class="itemcode"><span id="processEach"></span><code>procedure <strong>processEach</strong>();</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="tree"></span><code><strong>tree</strong>: String
-  </code></td>
-</tr>
-<tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+processing of each elements in queue</p>
+</td></tr>
 </table>
 (c) Назаров А.А., Оренбург, 2021-2023 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a>
 <hr><span class="appinfo"><em>Сгенерировал <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>

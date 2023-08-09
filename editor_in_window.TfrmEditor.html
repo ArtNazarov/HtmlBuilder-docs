@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container"><div class="navigation">
-<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Модули</a></li><li><a href="ClassHierarchy.html">Иерархия классов</a></li><li><a href="AllClasses.html">Классы, интерфейсы и объекты</a></li><li><a href="AllTypes.html">Типы</a></li><li><a href="AllVariables.html">Переменные</a></li><li><a href="AllConstants.html">Константы</a></li><li><a href="AllFunctions.html">Процедуры и функции</a></li><li><a href="AllIdentifiers.html">Идентификаторы</a></li><li><a href="GVUses.png">График зависимости модулей</a></li><li><a href="GVClasses.png">График иерархии классов</a></li></ul></div><div class="content">
+<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Модули</a></li><li><a href="ClassHierarchy.html">Иерархия классов</a></li><li><a href="AllClasses.html">Классы, интерфейсы и объекты</a></li><li><a href="AllTypes.html">Типы</a></li><li><a href="AllVariables.html">Переменные</a></li><li><a href="AllConstants.html">Константы</a></li><li><a href="AllFunctions.html">Процедуры и функции</a></li><li><a href="AllIdentifiers.html">Идентификаторы</a></li></ul></div><div class="content">
 <span id="TfrmEditor"></span><h1 class="cio">Класс TfrmEditor</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Описание</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Иерархия</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Поля</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Методы</a></div><div class="one_section">Свойства</div></div>
@@ -21,7 +21,7 @@
 <code>type TfrmEditor = class(TForm)</code></p>
 <h2 class="description">Описание</h2>
 <p>
-TfrmEditor</p>
+Window with HTML editor</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Иерархия</h2>
 <ul class="hierarchy"><li class="ancestor">TForm</li>
 <li class="thisitem">TfrmEditor</li></ul><h2 class="overview">Обзор</h2>
@@ -799,7 +799,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="markup"></span><code><strong>markup</strong>: String;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+HTML text</p>
+</td></tr>
 </table>
 <h3 class="detail">Методы</h3>
 <table class="detail wide_list">
@@ -1072,7 +1074,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="pair"></span><code>procedure <strong>pair</strong>(t: string);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Places paired tag</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1080,7 +1084,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="tagHref"></span><code>procedure <strong>tagHref</strong>();</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Places a href tag</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1088,7 +1094,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="tagImg"></span><code>procedure <strong>tagImg</strong>();</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Places img tag</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1096,7 +1104,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="tagAnchor"></span><code>procedure <strong>tagAnchor</strong>();</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Places anchor</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1104,7 +1114,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="tagList"></span><code>procedure <strong>tagList</strong>(t: string);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Places list tag</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1112,7 +1124,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="setMarkup"></span><code>procedure <strong>setMarkup</strong>(html : String);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Setter for member markup</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1120,7 +1134,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="getMarkup"></span><code>function <strong>getMarkup</strong>() : String;</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Getter for member markup</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1128,7 +1144,9 @@ TfrmEditor</p>
 <td class="itemcode"><span id="tagC"></span><code>procedure <strong>tagC</strong>(tg, params : String);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Places open and closed tags</p>
+</td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
@@ -1136,8 +1154,11 @@ TfrmEditor</p>
 <td class="itemcode"><span id="tagX"></span><code>procedure <strong>tagX</strong>(tg, params : String);</code></td>
 </tr>
 <tr><td colspan="2">
-&nbsp;</td></tr>
+<p>
+Places single tag like hr</p>
+</td></tr>
 </table>
-(c) Назаров А.А., Оренбург, 2003<hr><span class="appinfo"><em>Сгенерировал <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+(c) Назаров А.А., Оренбург, 2021-2023 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a>
+<hr><span class="appinfo"><em>Сгенерировал <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
 </span>
 </div></div></body></html>

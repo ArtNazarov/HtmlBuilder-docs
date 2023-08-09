@@ -5,6 +5,15 @@ DiGraph Classes {
   "TfrmEditor" [href="editor_in_window.TfrmEditor.html"]
   "TfrmEditorCss" -> "TForm"
   "TfrmEditorCss" [href="editor_css.TfrmEditorCss.html"]
+  "TfrmEditorJs" -> "TForm"
+  "TfrmEditorJs" [href="editor_js.TfrmEditorJs.html"]
   "Render" -> "TObject"
   "Render" [href="RenderHtml.Render.html"]
+  "TAsyncWriter" -> "TObject"
+  "TAsyncWriter" [href="AsyncQueue.TAsyncWriter.html"]
+  "TFilesQueue" -> "TObject"
+  "TFilesQueue" [href="AsyncQueue.TFilesQueue.html"]
+  "TThread" -> "TObject"
+  "TAsyncWriteExecutor" -> "TThread"
+  "TAsyncWriteExecutor" [href="AsyncQueue.TAsyncWriteExecutor.html"]
 }
