@@ -65,34 +65,40 @@ contains requests for inserting new data in database during initialization</p>
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#insertDemoDataMenuItem">insertDemoDataMenuItem</a></strong>(var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
 <tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#insertDemoDataImage">insertDemoDataImage</a></strong>(var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
+</tr>
+<tr class="list">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoBlock">addIntoBlock</a></strong>( id, markup, remark : String; var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoSection">addIntoSection</a></strong>( s : <a href="types_for_app.TSection_Record.html">TSection_Record</a> ; var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoContent">addIntoContent</a></strong>( var p : <a href="db_insertdemo.TPage_Record.html">TPage_Record</a>; var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoPreset">addIntoPreset</a></strong>(pr : <a href="types_for_app.PresetRecord.html">PresetRecord</a>; var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoCss">addIntoCss</a></strong>( css_id, css_style, css_path: String; var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoJs">addIntoJs</a></strong>(js_id, js_path, js_file: String; var sq: TSQLQuery; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoTag">addIntoTag</a></strong>(tag_id, tag_caption : String; var sq: TSQLQuery; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoTagsPages">addIntoTagsPages</a></strong>(id_tag_page, id_tag, id_page : String; var sq: TSQLQuery; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction);</code></td>
 </tr>
-<tr class="list2">
+<tr class="list">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoMenu">addIntoMenu</a></strong>(m : <a href="types_for_app.Menu.html">Menu</a>; var sq: TSQLQuery; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction);</code></td>
 </tr>
-<tr class="list">
+<tr class="list2">
 <td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoMenuItem">addIntoMenuItem</a></strong>(mi : <a href="types_for_app.MenuItem.html">MenuItem</a>; var sq: TSQLQuery; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="db_insertdemo.html#addIntoImage">addIntoImage</a></strong>(ir : <a href="types_for_app.TImageRecord.html">TImageRecord</a>; var sq: TSQLQuery; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction);</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -198,6 +204,15 @@ Inserts demo data to table menu_item</p>
 </table>
 <table class="detail wide_list">
 <tr class="list">
+<td class="itemcode"><span id="insertDemoDataImage"></span><code>procedure <strong>insertDemoDataImage</strong>(var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Insert demo data to table images</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
 <td class="itemcode"><span id="addIntoBlock"></span><code>procedure <strong>addIntoBlock</strong>( id, markup, remark : String; var sq : TSQLQuery; var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
 <tr><td colspan="1">
@@ -284,6 +299,15 @@ Executes request for adding menu</p>
 <tr><td colspan="1">
 <p>
 Executes request for adding menu item</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="addIntoImage"></span><code>procedure <strong>addIntoImage</strong>(ir : <a href="types_for_app.TImageRecord.html">TImageRecord</a>; var sq: TSQLQuery; var konnect: TSQLite3Connection; var tranzact: TSQLTransaction);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Executes request for adding image</p>
 </td></tr>
 </table>
 (c) Назаров А.А., Оренбург, 2021-2023 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a>

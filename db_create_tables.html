@@ -50,6 +50,9 @@ Contains procedures for initialization new database</p>
 <tr class="list2">
 <td class="itemcode"><code>procedure <strong><a href="db_create_tables.html#createTagsPagesSQL">createTagsPagesSQL</a></strong>(var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
 </tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="db_create_tables.html#createImagesSQL">createImagesSQL</a></strong>(var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
+</tr>
 </table>
 <h2 class="description">Description</h2>
 <h3 class="detail">Functions and Procedures</h3>
@@ -141,6 +144,15 @@ Create table tags</p>
 <tr><td colspan="1">
 <p>
 Create table tags_pages</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="createImagesSQL"></span><code>procedure <strong>createImagesSQL</strong>(var konnect : TSQLite3Connection; var tranzact : TSQLTransaction);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Create table images</p>
 </td></tr>
 </table>
 (c) Назаров А.А., Оренбург, 2021-2023 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a>
