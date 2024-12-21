@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>HtmlBuilder Developer Docs: AsyncQueue: Class TAsyncWriteExecutor</title>
+<title>HtmlBuilder Developer Docs: FontSettings: Class TFontManager</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="PasDoc 0.16.0">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -11,50 +11,53 @@
 <div class="container"><div class="navigation">
 <h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a> | <a href="https://htmlbuilder.onhalt.site">Project page with screenshots</a> | <a href="https://nazarow.ru/section_htmlbuilder.html">Blog posts</a>
-<span id="TAsyncWriteExecutor"></span><h1 class="cio">Class TAsyncWriteExecutor</h1>
+<span id="TFontManager"></span><h1 class="cio">Class TFontManager</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section">Properties</div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a href="AsyncQueue.html">AsyncQueue</a></p>
+<a href="FontSettings.html">FontSettings</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
-<code>type TAsyncWriteExecutor = class(TThread)</code></p>
+<code>type TFontManager = class(TObject)</code></p>
 <h2 class="description">Description</h2>
 <p>
-Writes in separate thread writer aw</p>
+TFontManager</p>
 <span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
 <ul class="hierarchy"><li class="ancestor">TObject</li>
-<li class="ancestor">TThread</li>
-<li class="thisitem">TAsyncWriteExecutor</li></ul><h2 class="overview">Overview</h2>
+<li class="thisitem">TFontManager</li></ul><h2 class="overview">Overview</h2>
 <span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="AsyncQueue.TAsyncWriteExecutor.html#aw">aw</a></strong>: <a href="AsyncQueue.TAsyncWriter.html">TAsyncWriter</a>;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="AsyncQueue.TAsyncWriteExecutor.html#filename">filename</a></strong>: String;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="AsyncQueue.TAsyncWriteExecutor.html#data">data</a></strong>: String;</code></td>
+<td class="itemcode"><code><strong><a href="FontSettings.TFontManager.html#Font">Font</a></strong>: TFont;</code></td>
 </tr>
 </table>
 <span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>constructor <strong><a href="AsyncQueue.TAsyncWriteExecutor.html#Create">Create</a></strong>(CreateSuspended : boolean);</code></td>
+<td class="itemcode"><code>constructor <strong><a href="FontSettings.TFontManager.html#Create">Create</a></strong>();</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="AsyncQueue.TAsyncWriteExecutor.html#setArgs">setArgs</a></strong>(aFilename : String; aData : String);</code></td>
+<td class="itemcode"><code>destructor <strong><a href="FontSettings.TFontManager.html#Destroy">Destroy</a></strong>; override;</code></td>
 </tr>
 <tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><code>procedure <strong><a href="AsyncQueue.TAsyncWriteExecutor.html#Execute">Execute</a></strong>(); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="FontSettings.TFontManager.html#initValues">initValues</a></strong>();</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="FontSettings.TFontManager.html#SaveFontSettings">SaveFontSettings</a></strong>();</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="FontSettings.TFontManager.html#LoadFontSettings">LoadFontSettings</a></strong>();</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <strong><a href="FontSettings.TFontManager.html#useFont">useFont</a></strong>( SelectedFont : TFont);</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -62,62 +65,70 @@ Writes in separate thread writer aw</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="aw"></span><code><strong>aw</strong>: <a href="AsyncQueue.TAsyncWriter.html">TAsyncWriter</a>;</code></td>
+<td class="itemcode"><span id="Font"></span><code><strong>Font</strong>: TFont;</code></td>
 </tr>
 <tr><td colspan="2">
-<p>
-Contains writer</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="filename"></span><code><strong>filename</strong>: String;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Name of file with absolute path</p>
-</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="data"></span><code><strong>data</strong>: String;</code></td>
-</tr>
-<tr><td colspan="2">
-<p>
-Text of HTML or other file</p>
-</td></tr>
+&nbsp;</td></tr>
 </table>
 <h3 class="detail">Methods</h3>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>(CreateSuspended : boolean);</code></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <strong>Create</strong>();</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Creates thread, CreateSuspended should be true</p>
+return with actual or default values</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="setArgs"></span><code>procedure <strong>setArgs</strong>(aFilename : String; aData : String);</code></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <strong>Destroy</strong>; override;</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Setter for members filename, data</p>
+Destructor declaration</p>
 </td></tr>
 </table>
 <table class="detail wide_list">
 <tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
-<td class="itemcode"><span id="Execute"></span><code>procedure <strong>Execute</strong>(); override;</code></td>
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="initValues"></span><code>procedure <strong>initValues</strong>();</code></td>
 </tr>
 <tr><td colspan="2">
 <p>
-Launch aw.writedocument</p>
+sets default values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SaveFontSettings"></span><code>procedure <strong>SaveFontSettings</strong>();</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+save to ini file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="LoadFontSettings"></span><code>procedure <strong>LoadFontSettings</strong>();</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+load from init file</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="useFont"></span><code>procedure <strong>useFont</strong>( SelectedFont : TFont);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+change font</p>
 </td></tr>
 </table>
 (c) Назаров А.А., Оренбург, 2021-2024 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a> <a href="https://github.com/artnazarov/htmlbuilder-docs">HtmlBuilder Docs on Github</a>

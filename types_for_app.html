@@ -80,6 +80,14 @@ Some types for storing data</p>
 <td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.TAttachmentRecord.html"><code>TAttachmentRecord</code></a></td>
 <td class="itemdesc">&nbsp;</td>
 </tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="types_for_app.TBufferHistoryRecord.html"><code>TBufferHistoryRecord</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Record&nbsp;<a class="bold" href="types_for_app.TEmojiShortCode.html"><code>TEmojiShortCode</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
 </table>
 <span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
 <table class="summary wide_list">
@@ -103,6 +111,18 @@ Some types for storing data</p>
 </tr>
 <tr class="list2">
 <td class="itemcode"><code><strong><a href="types_for_app.html#PagesMap">PagesMap</a></strong> = specialize TFPGmap&lt;string, <a href="types_for_app.page_params.html">page_params</a>&gt;;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="types_for_app.html#PBufferHistoryRecord">PBufferHistoryRecord</a></strong> = &circ;<a href="types_for_app.TBufferHistoryRecord.html">TBufferHistoryRecord</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="types_for_app.html#TEmojiShortCodesArray">TEmojiShortCodesArray</a></strong> = Array Of <a href="types_for_app.TEmojiShortCode.html">TEmojiShortCode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="types_for_app.html#TFuncStr">TFuncStr</a></strong> = function(s: String): String of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="types_for_app.html#TFuncStrArray">TFuncStrArray</a></strong> = Array of <a href="types_for_app.html#TFuncStr">TFuncStr</a>;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -162,6 +182,40 @@ User Record properties</p>
 <tr><td colspan="1">
 <p>
 HashMap String to Page_Params</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBufferHistoryRecord"></span><code><strong>PBufferHistoryRecord</strong> = &circ;<a href="types_for_app.TBufferHistoryRecord.html">TBufferHistoryRecord</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TEmojiShortCodesArray"></span><code><strong>TEmojiShortCodesArray</strong> = Array Of <a href="types_for_app.TEmojiShortCode.html">TEmojiShortCode</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+TEmojiShortCodesArray for representation dynamic array of shortcodes</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFuncStr"></span><code><strong>TFuncStr</strong> = function(s: String): String of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+String function</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TFuncStrArray"></span><code><strong>TFuncStrArray</strong> = Array of <a href="types_for_app.html#TFuncStr">TFuncStr</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array of string functions</p>
 </td></tr>
 </table>
 (c) Назаров А.А., Оренбург, 2021-2024 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a> <a href="https://github.com/artnazarov/htmlbuilder-docs">HtmlBuilder Docs on Github</a>

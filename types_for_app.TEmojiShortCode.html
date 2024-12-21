@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>HtmlBuilder Developer Docs: db_insertdemo: Record TPage_Record</title>
+<title>HtmlBuilder Developer Docs: types_for_app: Record TEmojiShortCode</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="PasDoc 0.16.0">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -11,40 +11,28 @@
 <div class="container"><div class="navigation">
 <h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
 <a href="https://github.com/artnazarov/htmlbuilder">HtmlBuilder on Github</a> | <a href="https://htmlbuilder.onhalt.site">Project page with screenshots</a> | <a href="https://nazarow.ru/section_htmlbuilder.html">Blog posts</a>
-<span id="TPage_Record"></span><h1 class="cio">Record TPage_Record</h1>
+<span id="TEmojiShortCode"></span><h1 class="cio">Record TEmojiShortCode</h1>
 <div class="sections">
 <div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Hierarchy</div><div class="one_section"><a class="section" href="#PasDoc-Fields">Fields</a></div><div class="one_section">Methods</div><div class="one_section">Properties</div></div>
 <span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
 <p class="unitlink">
-<a href="db_insertdemo.html">db_insertdemo</a></p>
+<a href="types_for_app.html">types_for_app</a></p>
 <h2 class="declaration">Declaration</h2>
 <p class="declaration">
-<code>type TPage_Record = record</code></p>
+<code>type TEmojiShortCode = record</code></p>
 <h2 class="description">Description</h2>
 <p>
-Record of some properties of page in table content</p>
+TEmojiShortCode for representation pair emoji and it shortcode</p>
 <h2 class="overview">Overview</h2>
 <span id="PasDoc-Fields"></span><h3 class="summary">Fields</h3>
 <table class="summary wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="db_insertdemo.TPage_Record.html#id">id</a></strong>: String;</code></td>
+<td class="itemcode"><code><strong><a href="types_for_app.TEmojiShortCode.html#shortcode">shortcode</a></strong>: String;</code></td>
 </tr>
 <tr class="list2">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="db_insertdemo.TPage_Record.html#cap">cap</a></strong>: String;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="db_insertdemo.TPage_Record.html#content">content</a></strong>: String;</code></td>
-</tr>
-<tr class="list2">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="db_insertdemo.TPage_Record.html#section">section</a></strong>: String;</code></td>
-</tr>
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><code><strong><a href="db_insertdemo.TPage_Record.html#dt">dt</a></strong>: TDateTime;</code></td>
+<td class="itemcode"><code><strong><a href="types_for_app.TEmojiShortCode.html#utf8symbol">utf8symbol</a></strong>: String;</code></td>
 </tr>
 </table>
 <h2 class="description">Description</h2>
@@ -52,7 +40,7 @@ Record of some properties of page in table content</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="id"></span><code><strong>id</strong>: String;</code></td>
+<td class="itemcode"><span id="shortcode"></span><code><strong>shortcode</strong>: String;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
@@ -60,31 +48,7 @@ Record of some properties of page in table content</p>
 <table class="detail wide_list">
 <tr class="list">
 <td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="cap"></span><code><strong>cap</strong>: String;</code></td>
-</tr>
-<tr><td colspan="2">
-&nbsp;</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="content"></span><code><strong>content</strong>: String;</code></td>
-</tr>
-<tr><td colspan="2">
-&nbsp;</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="section"></span><code><strong>section</strong>: String;</code></td>
-</tr>
-<tr><td colspan="2">
-&nbsp;</td></tr>
-</table>
-<table class="detail wide_list">
-<tr class="list">
-<td class="visibility"><a href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
-<td class="itemcode"><span id="dt"></span><code><strong>dt</strong>: TDateTime;</code></td>
+<td class="itemcode"><span id="utf8symbol"></span><code><strong>utf8symbol</strong>: String;</code></td>
 </tr>
 <tr><td colspan="2">
 &nbsp;</td></tr>
