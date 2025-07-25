@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HtmlBuilder Developer Docs: tzutil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<a href="https://github.com/ArtNazarov/HtmlBuilder">HtmlBuilder on Githcub</a> | <a href="apprr.rf.gd/HtmlBuilder/">Project page with screenshots</a> | <a href="https://artnazarov.github.io/section_htmlbuilder.html">Blog posts</a>
+<h1 class="unit">Unit tzutil</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Unit with timezone support for some Freepascal platforms. Tomas Hajny</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="tzutil.html#TZSeconds">TZSeconds</a></strong>: longint;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTSpecType">DSTSpecType</a></strong> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#TZName">TZName</a></strong>: string = '';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="tzutil.html#TZDSTName">TZDSTName</a></strong>: string = '';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#TZOffset">TZOffset</a></strong>: longint = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTOffset">DSTOffset</a></strong>: longint = 0;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTStartMonth">DSTStartMonth</a></strong>: byte = 4;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTStartWeek">DSTStartWeek</a></strong>: shortint = 1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTStartDay">DSTStartDay</a></strong>: word = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTStartSec">DSTStartSec</a></strong>: cardinal = 7200;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTEndMonth">DSTEndMonth</a></strong>: byte = 10;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTEndWeek">DSTEndWeek</a></strong>: shortint = -1;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTEndDay">DSTEndDay</a></strong>: word = 0;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTEndSec">DSTEndSec</a></strong>: cardinal = 10800;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTStartSpecType">DSTStartSpecType</a></strong>: <a href="tzutil.html#DSTSpecType">DSTSpecType</a> = <a href="tzutil.html#DSTMonthWeekDay">DSTMonthWeekDay</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><strong><a href="tzutil.html#DSTEndSpecType">DSTEndSpecType</a></strong>: <a href="tzutil.html#DSTSpecType">DSTSpecType</a> = <a href="tzutil.html#DSTMonthWeekDay">DSTMonthWeekDay</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TZSeconds"></span><code>function <strong>TZSeconds</strong>: longint;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTSpecType"></span><code><strong>DSTSpecType</strong> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="DSTMonthWeekDay">DSTMonthWeekDay</span></li>
+<li>
+<span id="DSTMonthDay">DSTMonthDay</span></li>
+<li>
+<span id="DSTJulian">DSTJulian</span></li>
+<li>
+<span id="DSTJulianX">DSTJulianX</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TZName"></span><code><strong>TZName</strong>: string = '';</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Initialized to default values</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TZDSTName"></span><code><strong>TZDSTName</strong>: string = '';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TZOffset"></span><code><strong>TZOffset</strong>: longint = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTOffset"></span><code><strong>DSTOffset</strong>: longint = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTStartMonth"></span><code><strong>DSTStartMonth</strong>: byte = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTStartWeek"></span><code><strong>DSTStartWeek</strong>: shortint = 1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTStartDay"></span><code><strong>DSTStartDay</strong>: word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTStartSec"></span><code><strong>DSTStartSec</strong>: cardinal = 7200;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTEndMonth"></span><code><strong>DSTEndMonth</strong>: byte = 10;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTEndWeek"></span><code><strong>DSTEndWeek</strong>: shortint = -1;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTEndDay"></span><code><strong>DSTEndDay</strong>: word = 0;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTEndSec"></span><code><strong>DSTEndSec</strong>: cardinal = 10800;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTStartSpecType"></span><code><strong>DSTStartSpecType</strong>: <a href="tzutil.html#DSTSpecType">DSTSpecType</a> = <a href="tzutil.html#DSTMonthWeekDay">DSTMonthWeekDay</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="DSTEndSpecType"></span><code><strong>DSTEndSpecType</strong>: <a href="tzutil.html#DSTSpecType">DSTSpecType</a> = <a href="tzutil.html#DSTMonthWeekDay">DSTMonthWeekDay</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+(c) Назаров А.А., Оренбург, 2021-2025 <a href="https://github.com/ArtNazarov/HtmlBuilder">HtmlBuilder on Github</a> | <a href="https://github.com/ArtNazarov/HtmlBuilder-docs">HtmlBuilder Docs on Github</a> | <a href="https://htmlbuilder.tilda.ws/">Presentation on Tilda</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>

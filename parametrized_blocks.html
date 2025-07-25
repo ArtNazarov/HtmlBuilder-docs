@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HtmlBuilder Developer Docs: parametrized_blocks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.16.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<div class="container"><div class="navigation">
+<h2><a href="index.html">HtmlBuilder Developer Docs</a></h2><ul><li><a href="AllUnits.html">Units</a></li><li><a href="ClassHierarchy.html">Class Hierarchy</a></li><li><a href="AllClasses.html">Classes, Interfaces, Objects and Records</a></li><li><a href="AllTypes.html">Types</a></li><li><a href="AllVariables.html">Variables</a></li><li><a href="AllConstants.html">Constants</a></li><li><a href="AllFunctions.html">Functions and Procedures</a></li><li><a href="AllIdentifiers.html">Identifiers</a></li></ul></div><div class="content">
+<a href="https://github.com/ArtNazarov/HtmlBuilder">HtmlBuilder on Githcub</a> | <a href="apprr.rf.gd/HtmlBuilder/">Project page with screenshots</a> | <a href="https://artnazarov.github.io/section_htmlbuilder.html">Blog posts</a>
+<h1 class="unit">Unit parametrized_blocks</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+&nbsp;<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="parametrized_blocks.html#ParseVariablesToMap">ParseVariablesToMap</a></strong>(const t: String): <a href="parametrized_blocks.html#TStringMap">TStringMap</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="parametrized_blocks.html#scanForPartialVariables">scanForPartialVariables</a></strong>(const t: String): <a href="parametrized_blocks.html#TStringMap">TStringMap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <strong><a href="parametrized_blocks.html#FillPartialVariables">FillPartialVariables</a></strong>(var ScannedVariables, Variables: <a href="parametrized_blocks.html#TStringMap">TStringMap</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <strong><a href="parametrized_blocks.html#printStringMap">printStringMap</a></strong>(const Variables: <a href="parametrized_blocks.html#TStringMap">TStringMap</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="parametrized_blocks.html#applyPartialVariables">applyPartialVariables</a></strong>(var scannedVariables: <a href="parametrized_blocks.html#TStringMap">TStringMap</a>; const htmlTemplate: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <strong><a href="parametrized_blocks.html#getParametrizedBlocks">getParametrizedBlocks</a></strong>(t: String): <a href="parametrized_blocks.html#TStringMap">TStringMap</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <strong><a href="parametrized_blocks.html#makeParametrization">makeParametrization</a></strong>(var html: String; var GlobalBlocks : <a href="parametrized_blocks.html#TStringMap">TStringMap</a>): String;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><strong><a href="parametrized_blocks.html#TStringMap">TStringMap</a></strong> = specialize TFPGMap&lt;String, String&gt;;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="ParseVariablesToMap"></span><code>function <strong>ParseVariablesToMap</strong>(const t: String): <a href="parametrized_blocks.html#TStringMap">TStringMap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+парсит из строки *var1 *var2 имена переменных</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="scanForPartialVariables"></span><code>function <strong>scanForPartialVariables</strong>(const t: String): <a href="parametrized_blocks.html#TStringMap">TStringMap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+сканирует строку &gt;&lt; var1=`value` var2=`value2` &gt;&lt; на значения переменных</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="FillPartialVariables"></span><code>procedure <strong>FillPartialVariables</strong>(var ScannedVariables, Variables: <a href="parametrized_blocks.html#TStringMap">TStringMap</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+заполняет переменные - слева приемник, справа источник из scanForPartialVariables</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="printStringMap"></span><code>procedure <strong>printStringMap</strong>(const Variables: <a href="parametrized_blocks.html#TStringMap">TStringMap</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+для отладки распечатка словаря</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="applyPartialVariables"></span><code>function <strong>applyPartialVariables</strong>(var scannedVariables: <a href="parametrized_blocks.html#TStringMap">TStringMap</a>; const htmlTemplate: String): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+применение к строке заполненного словаря</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="getParametrizedBlocks"></span><code>function <strong>getParametrizedBlocks</strong>(t: String): <a href="parametrized_blocks.html#TStringMap">TStringMap</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+находит все параметризованные блоки</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="makeParametrization"></span><code>function <strong>makeParametrization</strong>(var html: String; var GlobalBlocks : <a href="parametrized_blocks.html#TStringMap">TStringMap</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+применяет параметры параметризованных блоков к строке с ними</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TStringMap"></span><code><strong>TStringMap</strong> = specialize TFPGMap&lt;String, String&gt;;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+(c) Назаров А.А., Оренбург, 2021-2025 <a href="https://github.com/ArtNazarov/HtmlBuilder">HtmlBuilder on Github</a> | <a href="https://github.com/ArtNazarov/HtmlBuilder-docs">HtmlBuilder Docs on Github</a> | <a href="https://htmlbuilder.tilda.ws/">Presentation on Tilda</a>
+<hr><span class="appinfo"><em>Generated by <a href="https://pasdoc.github.io/">PasDoc 0.16.0</a>. </em>
+</span>
+</div></div></body></html>
